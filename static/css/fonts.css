@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'CangJieJinKai01W04';
+  src: url('/CangJieJinKai01W04.ttf') format('truetype');
+}
 body {
-  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+  font-family: 'CangJieJinKai01W04', Optima, Candara, Calibri, Arial, sans-serif;
 }
 code {
   font-family: "Lucida Console", Monaco, monospace;
