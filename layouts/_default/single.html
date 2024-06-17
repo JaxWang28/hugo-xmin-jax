@@ -2,8 +2,13 @@
 <div class="article-meta">
 <h1><span class="title">{{ .Title | markdownify }}</span></h1>
 {{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
-{{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>{{ end }}
-{{ partial "single_custom.html" . }}
+<h2 class="date">
+{{ if (gt .Params.date 0) }} {{ .Date.Format "2006/01/02" }} {{ end }}
+{{ if .Site.Params.busuanzi.enable -}}
+&nbsp
+<span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span>次阅读量</span>
+{{- end }}
+</h2>
 </div>
 
 <main>
