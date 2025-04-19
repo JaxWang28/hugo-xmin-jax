@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'CangJieJinKai01W04';
-  src: url('/CangJieJinKai01W04.ttf') format('truetype');
+  src: url('/CangJieJinKai01W04.subset.woff2') format('truetype');
 }
 body {
   font-family: 'CangJieJinKai01W04', Optima, Candara, Calibri, Arial, sans-serif;
