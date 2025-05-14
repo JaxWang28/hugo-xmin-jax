@@ -49,3 +49,13 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+.markdown-box {
+  border: 1px solid #d0d7de;  /* GitHub 风格的浅灰边框 */
+  border-radius: 6px;         /* 圆角边框 */
+  padding: 16px;              /* 内边距 */
+  background-color: #ffffff;  /* 白色背景 */
+  box-shadow: 0 1px 3px rgba(27,31,35,0.12); /* 轻微阴影 */
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}

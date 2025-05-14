@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <div class="article-meta">
 <h1><span class="title">{{ .Title | markdownify }}</span></h1>
-{{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
+<!-- {{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }} -->
 <h2 class="date">
 {{ if (gt .Params.date 0) }} {{ .Date.Format "2006/01/02" }} {{ end }}
 {{ if .Site.Params.busuanzi.enable -}}
@@ -11,10 +11,13 @@
 </h2>
 </div>
 
-<main>
+<div class="markdown-box">
+<main class="markdown-body">
 {{ .Content }}
 </main>
-<hr/>
-{{ template "_internal/disqus.html" . }}
+</div>
+
+<br>
+
 {{ template "_internal/giscus.html" . }}
 {{ partial "footer.html" . }}
