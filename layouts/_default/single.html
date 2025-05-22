@@ -2,13 +2,6 @@
 <div style="margin-left: auto; margin-right: 0; text-align: right;" >
   📅
   {{ if (gt .Params.date 0) }} {{ .Date.Format "2006/01/02" }} {{ end }}
-  {{ if .Site.Params.busuanzi.enable -}}
-  &nbsp
-  {{- end }}
-
-  <span id="busuanzi_container_page_pv">
-  👀<span id="busuanzi_value_page_pv"></span>
-  </span> 
 </div>
 <div class="markdown-box">
 <main class="markdown-body">
@@ -18,5 +11,4 @@
 
 <br>
 
-{{ template "_internal/giscus.html" . }}
 {{ partial "footer.html" . }}
